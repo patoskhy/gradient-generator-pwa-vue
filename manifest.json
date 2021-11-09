@@ -1,0 +1,61 @@
+{
+    "name": "Gradient Generator",
+    "short_name": "Gradient Gen",
+    "description": "Generador vue es una aplicacion que forma parte del curso de vue 3 desde cero",
+    "background_color": "#f5f5dc",
+    "theme_color": "#41b883",
+    "start_url":"./?unt_source=web_app_manifest",
+    "scope":"./",
+    "lang": "es-CL",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons":[
+        {
+            "src": "./img/favicon.ico",
+            "sizes": "256x256",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "./img/img48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/img64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+            
+        },
+        {
+            "src": "./img/img128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+        ,
+        {
+            "src": "./img/maskable.png",
+            "sizes": "182x182",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+        ,
+        {
+            "src": "./img/img256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+       
+        ,
+        {
+            "src": "./img/img512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+        ,
+        {
+            "src": "./img/img1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        }
+    ]
+}

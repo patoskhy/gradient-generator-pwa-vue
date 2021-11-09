@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="vue 3">
+      <!-- metadata para PWA -->
+    <!-- color barra estados para android -->
+    <meta name="theme-color" content="#f5f5dc">
+    <!-- mobile first para bots google -->
+    <meta name="MobileOptimazed" content="width">
+    <!-- amigable en dispositivos mobiles -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- modificar barra de estado IOS -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <title>Gradient Gen</title>
+     <!-- iconos -->
+     <link rel="shortcut icon" href="./img/favicon.ico">
+     <link rel="apple-touch-icon" href="./img/favicon.ico">
+     <link rel="apple-touch-startup-image" href="./img/favicon.ico">
+ 
+     <!-- manifiesto -->
+     <link rel="manifest" href="./manifest.json">
+
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app">
+      <h1>{{title}}</h1>
+      <hr>
+      <form>
+        <label>
+          Color 1:<input type="color" v-model="fcolor">
+        </label>
+        <label>
+          Color 2:<input type="color" v-model="scolor">
+        </label>
+        <p>HEX: {{fcolor}}</p>
+        <p>HEX: {{scolor}}</p>
+        <p>{{setColor}}</p>
+        <p>{{orientatio}}</p>
+        <div class="area" :style="setColor"></div>
+        <br>
+        <label>
+          <input  type="radio" value="1" v-model.number="orientation">Right
+        </label>
+        <label>
+          <input   type="radio" value="2" v-model.number="orientation">Left
+        </label>
+        <label>
+          <input   type="radio" value="3" v-model.number="orientation">Top
+        </label>
+        <label>
+          <input   type="radio" value="4" v-model.number="orientation">Bottom
+        </label>
+      </form>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./load.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/mount.js"></script>
+</body>
+</html>
